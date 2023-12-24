@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/board"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <ImageView
+            android:id="@+id/imgView0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="dropIn"
+            tools:ignore="ContentDescription"
+            android:tag="0"/>
+
+        <ImageView
+            android:id="@+id/imgView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="dropIn"
+            tools:ignore="ContentDescription"
+            android:tag="1"/>
+
+        <ImageView
+            android:id="@+id/imgView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="dropIn"
+            tools:ignore="ContentDescription"
+            android:tag="2"/>
+
+        <ImageView
+            android:id="@+id/imgView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="dropIn"
+            tools:ignore="ContentDescription"
+            android:tag="3"/>
+
+        <ImageView
+            android:id="@+id/imgView4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="dropIn"
+            tools:ignore="ContentDescription"
+            android:tag="4"/>
+
+        <ImageView
+            android:id="@+id/imgView5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="dropIn"
+            tools:ignore="ContentDescription"
+            android:tag="5"/>
+
+        <ImageView
+            android:id="@+id/imgView6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="dropIn"
+            tools:ignore="ContentDescription"
+            android:tag="6"/>
+
+        <ImageView
+            android:id="@+id/imgView7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="dropIn"
+            tools:ignore="ContentDescription"
+            android:tag="7"/>
+
+        <ImageView
+            android:id="@+id/imgView08"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:onClick="dropIn"
+            tools:ignore="ContentDescription"
+            android:tag="8"/>
+
+
+    </GridLayout>
+</RelativeLayout>
