@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,6 +7,7 @@
 
 
     <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -21,8 +21,8 @@
             android:layout_height="100dp"
             android:layout_margin="10dp"
             android:onClick="dropIn"
-            tools:ignore="ContentDescription"
-            android:tag="0"/>
+            android:tag="0"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/imgView1"
@@ -30,8 +30,8 @@
             android:layout_height="100dp"
             android:layout_margin="10dp"
             android:onClick="dropIn"
-            tools:ignore="ContentDescription"
-            android:tag="1"/>
+            android:tag="1"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/imgView2"
@@ -39,8 +39,8 @@
             android:layout_height="100dp"
             android:layout_margin="10dp"
             android:onClick="dropIn"
-            tools:ignore="ContentDescription"
-            android:tag="2"/>
+            android:tag="2"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/imgView3"
@@ -48,8 +48,8 @@
             android:layout_height="100dp"
             android:layout_margin="10dp"
             android:onClick="dropIn"
-            tools:ignore="ContentDescription"
-            android:tag="3"/>
+            android:tag="3"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/imgView4"
@@ -57,8 +57,8 @@
             android:layout_height="100dp"
             android:layout_margin="10dp"
             android:onClick="dropIn"
-            tools:ignore="ContentDescription"
-            android:tag="4"/>
+            android:tag="4"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/imgView5"
@@ -66,8 +66,8 @@
             android:layout_height="100dp"
             android:layout_margin="10dp"
             android:onClick="dropIn"
-            tools:ignore="ContentDescription"
-            android:tag="5"/>
+            android:tag="5"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/imgView6"
@@ -75,8 +75,8 @@
             android:layout_height="100dp"
             android:layout_margin="10dp"
             android:onClick="dropIn"
-            tools:ignore="ContentDescription"
-            android:tag="6"/>
+            android:tag="6"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/imgView7"
@@ -84,8 +84,8 @@
             android:layout_height="100dp"
             android:layout_margin="10dp"
             android:onClick="dropIn"
-            tools:ignore="ContentDescription"
-            android:tag="7"/>
+            android:tag="7"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/imgView08"
@@ -93,9 +93,28 @@
             android:layout_height="100dp"
             android:layout_margin="10dp"
             android:onClick="dropIn"
-            tools:ignore="ContentDescription"
-            android:tag="8"/>
+            android:tag="8"
+            tools:ignore="ContentDescription" />
 
 
     </GridLayout>
+
+    <TextView
+        android:id="@+id/txtWinnerNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/btnResetGame"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtWinnerNotif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/reset_btn"
+        android:visibility="invisible"
+        android:onClick="resetNewGame"/>
+
 </RelativeLayout>
